@@ -1,0 +1,60 @@
+.schedule-image {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    border: 2px solid;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.mobile-schedule-image {
+    width: 100%;
+    height: 260px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;    
+    border: 2px solid;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.align-background-right {
+    // background-position: right !important;
+    background-position-x: -219px !important;
+}
+
+.align-background-left {
+    // background-position: right !important;
+    background-position-x: left !important;
+}
+
+
+.center-schedule-line {
+    width: 5px;
+    height: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-color: #e8e1d1;
+}
+
+.center-schedule-line-item {
+    width: 20px;
+    height: 20px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: -135px !important;
+    background-color: #e8e1d1;
+    border-radius: 50%;
+}
+
+.first-item {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.last-item {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}

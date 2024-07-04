@@ -1,0 +1,77 @@
+.header {
+    height: 100px !important;
+}
+
+.header-bottom-border {
+    width: 100%;
+    height: 4px;
+    background-color: #e8e1d1;
+}
+
+.active-nav-link {
+    border: 1px solid #e8e1d1 !important;
+    border-radius: 6px;
+}
+
+.transparent-border {
+    border: 1px solid transparent;
+}
+
+.main-container {
+    min-height: 100vh;
+    margin: 0 auto -81px;
+    min-width: 1250px !important;
+    width: 100%;
+    background-image: url('../../../assets/images/thin-wood-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-mobile-container {
+    height: 100% !important;
+    margin: 0 auto -81px;
+    width: 100%;
+    background-image: url('../../../assets/images/thin-wood-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content-container {
+    overflow-y: auto;
+    height: calc(100vh - 104px);
+    min-width: 1060px !important;
+    width: 100%;
+}
+
+.content-mobile-container {
+    overflow-y: auto;
+    height: calc(100% - 104px);
+    width: 100%;
+}
+
+.header-logo {
+    height: 80px;
+    vertical-align: middle;
+}
+
+.mobile-menu-button {
+    align-self: center;
+    text-align: end;
+}
+
+.mobile-menu-icon {
+    font-size: 40px;
+    height: fit-content;
+    width: fit-content;
+}
+
+::ng-deep .mat-mdc-menu-panel.mat-mdc-menu-panel {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border-radius: 10px;
+}
+
+.screen-title-text {
+    // margin-right: -17px;
+}
