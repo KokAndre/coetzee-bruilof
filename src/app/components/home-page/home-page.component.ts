@@ -1,4 +1,5 @@
 import { ChangeDetectorRef, Component, Input, OnInit } from '@angular/core';
+import { interval, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-home-page',
@@ -6,21 +7,32 @@ import { ChangeDetectorRef, Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-  public accomplished: number = 20
-  public currentDate: any;
-  public targetDate: any;
-  public cDateMillisecs: any;
-  public tDateMillisecs: any;
-  public difference: any;
-  public seconds: any;
-  public minutes: any;
-  public hours: any;
-  public days: any;
-  public displayDays: any;
-  public displayHours: any;
-  public displayMinutes: any;
-  public displaySeconds: any;
-  public releaseVersion = '2024-03-23 - 1';
+  // public accomplished: number = 20
+  // public currentDate: any;
+  // public targetDate: any;
+  // public cDateMillisecs: any;
+  // public tDateMillisecs: any;
+  // public difference: any;
+  // public seconds: any;
+  // public minutes: any;
+  // public hours: any;
+  // public days: any;
+  // public displayDays: any;
+  // public displayHours: any;
+  // public displayMinutes: any;
+  // public displaySeconds: any;
+  public releaseVersion = '2025-11-09 - 1';
+
+
+
+    targetDate: Date = new Date('February 28, 2026 15:00:00'); // Set your specific date
+  days: number = 0;
+  hours: number = 0;
+  minutes: number = 0;
+  seconds: number = 0;
+  private countdownSubscription: Subscription | undefined;
+
+
 
   @Input() public isMobileView = false;
   @Input() public isAdmin = false;
@@ -29,43 +41,76 @@ export class HomePageComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.myTimer();
+    // this.myTimer();
+      this.startCountdown();
   }
 
-  public countDown() {
-    setTimeout(() => {
-      this.myTimer();
-    }, 1000)
+  // public countDown() {
+  //   setTimeout(() => {
+  //     this.myTimer();
+  //   }, 1000)
+  // }
+
+  // public myTimer() {
+  //   this.currentDate = new Date();
+  //   this.targetDate = new Date(2026, 1, 28, 13, 0, 0);
+  //   this.cDateMillisecs = this.currentDate.getTime();
+  //   this.tDateMillisecs = this.targetDate.getTime();
+  //   this.difference = this.tDateMillisecs - this.cDateMillisecs;
+  //   this.seconds = Math.floor(this.difference / 1000);
+  //   this.minutes = Math.floor(this.seconds / 60);
+  //   this.hours = Math.floor(this.minutes / 60);
+  //   this.days = Math.floor(this.hours / 24);
+
+  //   this.hours %= 24;
+  //   this.minutes %= 60;
+  //   this.seconds %= 60;
+  //   this.hours = this.hours < 10 ? "0" + this.hours : this.hours;
+  //   this.minutes = this.minutes < 10 ? "0" + this.minutes : this.minutes;
+  //   this.seconds = this.seconds < 10 ? "0" + this.seconds : this.seconds;
+
+  //   this.displayDays = this.days;
+  //   this.displayHours = (Number(this.hours) + 6).toString();
+  //   this.displayMinutes = this.minutes;
+  //   this.displaySeconds = this.seconds;
+
+  //   if (this.displayDays === 0 && this.displayHours === 0 && this.displayMinutes === 0 && this.displaySeconds === 0) {
+  //     // Do not execure the count down again
+  //   } else {
+  //     this.countDown();
+  //   }
+  // }
+
+
+
+
+
+
+
+    startCountdown(): void {
+    this.countdownSubscription = interval(1000).subscribe(() => {
+      this.updateCountdown();
+    });
   }
 
-  public myTimer() {
-    this.currentDate = new Date();
-    this.targetDate = new Date(2024, 6, 27);
-    this.cDateMillisecs = this.currentDate.getTime();
-    this.tDateMillisecs = this.targetDate.getTime();
-    this.difference = this.tDateMillisecs - this.cDateMillisecs;
-    this.seconds = Math.floor(this.difference / 1000);
-    this.minutes = Math.floor(this.seconds / 60);
-    this.hours = Math.floor(this.minutes / 60);
-    this.days = Math.floor(this.hours / 24);
+    updateCountdown(): void {
+    const now = new Date().getTime();
+    const distance = this.targetDate.getTime() - now;
 
-    this.hours %= 24;
-    this.minutes %= 60;
-    this.seconds %= 60;
-    this.hours = this.hours < 10 ? "0" + this.hours : this.hours;
-    this.minutes = this.minutes < 10 ? "0" + this.minutes : this.minutes;
-    this.seconds = this.seconds < 10 ? "0" + this.seconds : this.seconds;
-
-    this.displayDays = this.days;
-    this.displayHours = (Number(this.hours) + 6).toString();
-    this.displayMinutes = this.minutes;
-    this.displaySeconds = this.seconds;
-
-    if (this.displayDays === 0 && this.displayHours === 0 && this.displayMinutes === 0 && this.displaySeconds === 0) {
-      // Do not execure the count down again
-    } else {
-      this.countDown();
+    if (distance < 0) {
+      this.days = 0;
+      this.hours = 0;
+      this.minutes = 0;
+      if (this.countdownSubscription) {
+        this.countdownSubscription.unsubscribe();
+      }
+      return;
     }
+
+    this.days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    this.hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    this.minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    this.seconds = Math.floor((distance % (1000 * 60)) / 1000);
   }
 
 }

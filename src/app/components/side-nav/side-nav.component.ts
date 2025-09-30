@@ -44,7 +44,8 @@ export class SideNavComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getActiveUser();
+    // TODO: Add this back
+    // this.getActiveUser();
   }
 
   public getActiveUser() {

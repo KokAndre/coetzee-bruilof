@@ -6,7 +6,7 @@
     "start": "ng serve",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build": "ng build --base-href \"https://KokAndre.github.io/coetzee-wedding/\"",
+    "build": "ng build --base-href \"https://KokAndre.github.io/coetzee-bruilof/\"",
     "deploy": "npx angular-cli-ghpages --dir=dist/coetzee-wedding"
   },
   "private": true,

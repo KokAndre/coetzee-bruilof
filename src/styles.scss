@@ -6,8 +6,8 @@ html,
 body {
     margin: 0;
     // font-family: Roboto, "Helvetica Neue", sans-serif;
-    color: #e8e1d1 !important;
-    background-color: #e8e1d1;
+    color: #A6686A !important;
+    background-color: #D4BAB5;
     height: 100%;
 
     font-family: "Truculenta", sans-serif;
@@ -68,22 +68,22 @@ body::-webkit-scrollbar {
 }
 
 .mat-mdc-radio-button .mdc-form-field {
-    color: #e8e1d1;
+    color: #A6686A;
 }
 
 .mat-mdc-radio-button.mat-accent {
-    --mdc-radio-disabled-selected-icon-color: #e8e1d1;
-    --mdc-radio-disabled-unselected-icon-color: #e8e1d1;
-    --mdc-radio-unselected-focus-icon-color: #e8e1d1;
-    --mdc-radio-unselected-hover-icon-color: #e8e1d1;
-    --mdc-radio-unselected-icon-color: #e8e1d1;
-    --mdc-radio-unselected-pressed-icon-color: #e8e1d1;
-    --mdc-radio-selected-focus-icon-color: #e8e1d1;
-    --mdc-radio-selected-hover-icon-color: #e8e1d1;
-    --mdc-radio-selected-icon-color: #e8e1d1;
-    --mdc-radio-selected-pressed-icon-color: #e8e1d1;
-    --mat-mdc-radio-ripple-color: #0e8e1d100;
-    --mat-mdc-radio-checked-ripple-color: #e8e1d1;
+    --mdc-radio-disabled-selected-icon-color: #A6686A;
+    --mdc-radio-disabled-unselected-icon-color: #A6686A;
+    --mdc-radio-unselected-focus-icon-color: #A6686A;
+    --mdc-radio-unselected-hover-icon-color: #A6686A;
+    --mdc-radio-unselected-icon-color: #A6686A;
+    --mdc-radio-unselected-pressed-icon-color: #A6686A;
+    --mdc-radio-selected-focus-icon-color: #A6686A;
+    --mdc-radio-selected-hover-icon-color: #A6686A;
+    --mdc-radio-selected-icon-color: #A6686A;
+    --mdc-radio-selected-pressed-icon-color: #A6686A;
+    --mat-mdc-radio-ripple-color: #A6686A00;
+    --mat-mdc-radio-checked-ripple-color: #A6686A;
 }
 
 h1 {
@@ -104,6 +104,7 @@ h1 {
 
 
     font-size: 50px !important;
+    color: #A6686A !important
 }
 
 h2 {
@@ -121,7 +122,7 @@ h2 {
       "wdth" 100 !important;
 
     font-size: 30px !important;
-    color: #e8e1d1 !important;
+    color: #A6686A !important;
 }
 
 p {
@@ -140,7 +141,7 @@ p {
 
 
     margin-bottom: 0px;
-    color: #e8e1d1 !important;
+    color: #A6686A !important;
 }
 
 .center-align-vertical {
@@ -216,7 +217,7 @@ p {
 }
 
 .error-text {
-    color: #ff6f6f !important;
+    color: #d83d42 !important;
 }
 
 .coming-soon {
