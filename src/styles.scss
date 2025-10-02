@@ -10,7 +10,9 @@ body {
     background-color: #D4BAB5;
     height: 100%;
 
-    font-family: "Truculenta", sans-serif;
+    // font-family: "Truculenta", sans-serif;
+    font-family: "Italianno", cursive;
+    line-height: 1;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
@@ -59,7 +61,9 @@ body::-webkit-scrollbar {
     //     "INFM" 0,
     //     "SPAC" 0;
 
-    font-family: "Truculenta", sans-serif;
+    // font-family: "Truculenta", sans-serif;
+    font-family: "Italianno", cursive;
+    line-height: 1;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
@@ -95,7 +99,9 @@ h1 {
 
 
 
-    font-family: "Truculenta", sans-serif !important;
+    // font-family: "Truculenta", sans-serif !important;
+    font-family: "Italianno", cursive;
+    line-height: 1;
     font-optical-sizing: auto !important;
     font-weight: 300 !important;
     font-style: normal !important;
@@ -114,7 +120,9 @@ h2 {
     // letter-spacing: 2px;
     // font-style: normal !important;
 
-    font-family: "Truculenta", sans-serif !important;
+    // font-family: "Truculenta", sans-serif !important;
+    font-family: "Italianno", cursive;
+    line-height: 1;
     font-optical-sizing: auto !important;
     font-weight: 300 !important;
     font-style: normal !important;
@@ -132,7 +140,9 @@ p {
     // letter-spacing: 2px;
 
 
-    font-family: "Truculenta", sans-serif;
+    // font-family: "Truculenta", sans-serif;
+    font-family: "Italianno", cursive;
+    line-height: 1;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
@@ -189,19 +199,19 @@ p {
 }
 
 .text-size-16 {
-    font-size: 16px !important;
+    font-size: 20px !important;
 }
 
 .text-size-18 {
-    font-size: 18px !important;
+    font-size: 26px !important;
 }
 
 .text-size-22 {
-    font-size: 22px !important;
+    font-size: 30px !important;
 }
 
 .text-size-30 {
-    font-size: 30px !important;
+    font-size: 38px !important;
 }
 
 .font-style-italic {

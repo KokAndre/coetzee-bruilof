@@ -2,14 +2,14 @@
     width: 600px;
     height: 250px;
     background-image: url(../../../assets/images/venue/venue-logo-no-background.png);
-    background-size: cover;
+    background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
 }
 
 .mobile-venue-logo {
     background-image: url(../../../assets/images/venue/venue-logo-no-background.png);
-    background-size: cover;
+    background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
     width: 90%;
@@ -46,25 +46,25 @@
 }
 
 .image-1 {
-    background-image: url(../../../assets/images/venue/venue1.jpeg);
+    background-image: url(../../../assets/images/venue/venue-1.jpeg);
 }
 
 .image-2 {
-    background-image: url(../../../assets/images/venue/venue2.jpeg);
+    background-image: url(../../../assets/images/venue/venue-2.jpeg);
 }
 
 .image-3 {
-    background-image: url(../../../assets/images/venue/venue3.jpeg);
+    background-image: url(../../../assets/images/venue/venue-3.jpeg);
 }
 
 .image-4 {
-    background-image: url(../../../assets/images/venue/venue4.jpeg);
+    background-image: url(../../../assets/images/venue/venue-4.jpeg);
 }
 
-.image-5 {
-    background-image: url(../../../assets/images/venue/venue5.jpeg);
-}
+// .image-5 {
+//     background-image: url(../../../assets/images/venue/venue5.jpeg);
+// }
 
-.image-6 {
-    background-image: url(../../../assets/images/venue/venue6.jpeg);
-}
+// .image-6 {
+//     background-image: url(../../../assets/images/venue/venue6.jpeg);
+// }

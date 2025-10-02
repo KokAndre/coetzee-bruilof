@@ -2,7 +2,7 @@
 <div class="" [ngClass]="isMobileView ? 'main-mobile-container' : 'main-container'">
     <div class="header row mx-4">
         <div class="col-3 center-align-vertical">
-            <img src="assets/images/VenA-Vector-no-date.svg" class="header-logo" />
+            <!-- <img src="assets/images/VenA-Vector-no-date.svg" class="header-logo" /> -->
         </div>
         <div *ngIf="!isMobileView" class="col-9 align-right center-align-vertical">
             <div class="row h-100 w-100 justify-content-end">
@@ -41,7 +41,7 @@
                     <p class="m-2 text-size-22">Wedding Party</p>
                 </div> -->
 
-                <div *ngIf="activeUserData.isAdmin === '1'" class="pointer transparent-border"
+                <div class="pointer transparent-border"
                     (click)="setActiveScreen(availableScreens.RSVPStatus)"
                     [ngClass]="{'active-nav-link': activeScreen === availableScreens.RSVPStatus}">
                     <p class="m-2 text-size-22">RSVP Status</p>
@@ -96,7 +96,7 @@
                         <p class="m-2 text-size-22">RSVP</p>
                     </div>
 
-                    <div *ngIf="activeUserData.isAdmin === '1'" class="pointer transparent-border" mat-menu-item
+                    <div class="pointer transparent-border" mat-menu-item
                         (click)="setActiveScreen(availableScreens.RSVPStatus)"
                         [ngClass]="{'active-nav-link': activeScreen === availableScreens.RSVPStatus}">
                         <p class="m-2 text-size-22">RSVP Status</p>

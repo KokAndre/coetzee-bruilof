@@ -1,17 +1,21 @@
-<div *ngIf="!isMobileView" class="row mt-5 px-4">
-    <div class="col-4 home-image-banner image-1"></div>
-    <div class="col-4 home-image-banner image-2"></div>
-    <div class="col-4 home-image-banner image-3"></div>
+<div *ngIf="!isMobileView" class="row justify-content-center mx-0">
+    <!-- <div class="col-4 home-image-banner image-1"></div> -->
+    <!-- <div class="col-4 home-image-banner image-2"></div>
+    <div class="col-4 home-image-banner image-3"></div> -->
+
+    <img class="full-page-image" src="../../../assets/images/home-page/full-page-home-image.jpeg" alt="">
 </div>
 
-<div *ngIf="isMobileView" class="row mt-5">
-    <div class="col-12 mobile-home-image-banner image-1"></div>
+<div *ngIf="isMobileView" class="row">
+    <!-- <div class="col-12 mobile-home-image-banner image-1"></div> -->
     <!-- <div class="col-12 mobile-home-image-banner image-2"></div> -->
     <!-- <div class="col-6 mobile-home-image-banner image-3"></div>
     <div class="col-6 mobile-home-image-banner image-4"></div> -->
+
+    <img class="mobile-full-page-image" src="../../../assets/images/home-page/full-page-home-image.jpeg" alt="">
 </div>
 
-<div class="mx-auto mt-6" [ngClass]="isMobileView ? 'mobile-names-container' : 'names-container'">
+<!-- <div class="mx-auto mt-6" [ngClass]="isMobileView ? 'mobile-names-container' : 'names-container'">
     <h1 class="pt-6 pb-3 text-center">Ellouise</h1>
     <div class="row">
         <div class="col my-auto">
@@ -23,11 +27,11 @@
         </div>
     </div>
     <h1 class="pt-3 pb-6 text-center">Andre</h1>
-</div>
+</div> -->
 
-<p class="text-center my-6 text-size-22">February 28, 2026</p>
+<!-- <p class="text-center my-6 text-size-22">February 28, 2026</p> -->
 
-<div class="row pt-4">
+<div class="row pt-3">
     <div class="col-auto mx-auto text-center">
         <div class="row justify-content-center">
             <div class="col-auto">

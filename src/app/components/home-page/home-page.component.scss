@@ -1,3 +1,15 @@
+.mobile-full-page-image {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.full-page-image {
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
 .home-image-banner {
     height: 300px;
     background-size: cover;
@@ -19,19 +31,20 @@
 }
 
 .image-1 {
-    background-image: url('../../../assets/images/home-page/new-home-page-1.jpg');
+    // background-image: url('../../../assets/images/home-page/new-home-page-1.jpg');
+    background-image: url("../../../assets/images/home-page/full-page-home-image.jpeg");
 }
 
 .image-2 {
-    background-image: url('../../../assets/images/home-page/new-home-page-2.jpg');
+    background-image: url("../../../assets/images/home-page/new-home-page-2.jpg");
 }
 
 .image-3 {
-    background-image: url('../../../assets/images/home-page/new-home-page-3.jpg');
+    background-image: url("../../../assets/images/home-page/new-home-page-3.jpg");
 }
 
 .image-4 {
-    background-image: url('../../../assets/images/home-page/new-home-page-4.jpg');
+    background-image: url("../../../assets/images/home-page/new-home-page-4.jpg");
 }
 
 .names-container {
@@ -45,6 +58,6 @@
 .name-line {
     width: 100%;
     height: 4px;
-    background-color: #A6686A;
+    background-color: #a6686a;
     margin-bottom: 16px;
 }
