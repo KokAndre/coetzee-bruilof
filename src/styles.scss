@@ -62,7 +62,7 @@ body::-webkit-scrollbar {
     //     "SPAC" 0;
 
     // font-family: "Truculenta", sans-serif;
-    font-family: "Italianno", cursive;
+    font-family: "Italianno", cursive !important;
     line-height: 1;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -100,7 +100,7 @@ h1 {
 
 
     // font-family: "Truculenta", sans-serif !important;
-    font-family: "Italianno", cursive;
+    font-family: "Italianno", cursive !important;
     line-height: 1;
     font-optical-sizing: auto !important;
     font-weight: 300 !important;
@@ -121,7 +121,7 @@ h2 {
     // font-style: normal !important;
 
     // font-family: "Truculenta", sans-serif !important;
-    font-family: "Italianno", cursive;
+    font-family: "Italianno", cursive !important;
     line-height: 1;
     font-optical-sizing: auto !important;
     font-weight: 300 !important;
@@ -213,6 +213,11 @@ p {
 .text-size-30 {
     font-size: 38px !important;
 }
+
+.text-size-45 {
+    font-size: 45px !important;
+}
+
 
 .font-style-italic {
     font-style: italic !important;

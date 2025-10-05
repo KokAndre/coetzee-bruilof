@@ -34,4 +34,42 @@ export class RsvpServiceService {
     }
   }
 
+  public async searchUser(name: string, surname: string) {
+    try {
+      const { data, error } = await this.supabase
+        .from('attendees')
+        .select('*')
+        .ilike('name', name)
+        .ilike('surname', surname);
+
+      if (error) {
+        throw error;
+      }
+
+      return data;
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  public async updateUser(id: number, rsvpStatus: string, plusOneRsvpStatus: string) {
+    const currentDate = new Date().toISOString();
+    try {
+      const { data, error } = await this.supabase
+        .from('attendees')
+        .update({ 'rsvpStatus': rsvpStatus, 'rsvpDate': currentDate, 'plusOneRSVStatus': plusOneRsvpStatus })
+        .eq('id', id)
+        .select();
+
+      if (error) {
+        throw error;
+      }
+
+      return data;
+    } catch (error) {
+      throw error;
+    }
+  }
+
 }
+

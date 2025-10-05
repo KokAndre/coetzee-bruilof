@@ -1,10 +1,10 @@
 export class WeddingParticipentsData {
     id: number = 0;
-    firstName: string = '';
-    lastName: string = '';
-    description: string = '';
+    name: string = '';
+    surname: string = '';
     rsvpStatus: string = '';
-    nightsAccommodation: string = '0';
-    rsvpUpdateDate: string = '';
+    rsvpDate: string = '';
+    plusOneAllowed: boolean = false;
+    plusOneRSVStatus: string = '0';
     isAdmin: string = '0';
 }

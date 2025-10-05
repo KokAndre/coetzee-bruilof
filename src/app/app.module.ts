@@ -17,10 +17,11 @@ import { MatFormField } from '@angular/material/form-field';
 import { ErrorScreenComponent } from './components/error-screen/error-screen.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './material.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FaqComponent } from './components/faq/faq.component';
 import { RsvpStatusComponent } from './components/rsvp-status/rsvp-status.component';
 import { OurStoryComponent } from './components/our-story/our-story.component';
+import { GiftsComponent } from './components/gifts/gifts.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { OurStoryComponent } from './components/our-story/our-story.component';
     ErrorScreenComponent,
     FaqComponent,
     RsvpStatusComponent,
-    OurStoryComponent
+    OurStoryComponent,
+    GiftsComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +46,8 @@ import { OurStoryComponent } from './components/our-story/our-story.component';
     BrowserAnimationsModule,
     HttpClientModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     MaterialModule

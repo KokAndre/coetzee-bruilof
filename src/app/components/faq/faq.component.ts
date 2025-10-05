@@ -4,42 +4,42 @@ import { FaqItem } from 'src/app/models/faq-item.model';
 const questionsList = [
   {
     "header": "What To Wear?",
-    "boady": "Please be mindful of our semi-formal dress code for the outdoor venue. Considering the terrain, it's wise to opt for footwear that won't easily get stuck in the ground, perhaps avoiding high heels. Additionally, don't forget to bring along a jacket to stay comfortable throughout the event.",
+    "boady": "Semi formal neutral colors",
     "isPanelExpanded": false
   },
   {
     "header": "What Time Should I Arrive?",
-    "boady": "Guests are kindly requested to arrive at 3:00pm to enjoy welcome drinks and mingle before the festivities begin. For a detailed itinerary, please refer to the schedule tab.",
+    "boady": "Guests to arrive at 15:30 pm promptly",
     "isPanelExpanded": false
   },
   {
     "header": "Can I Bring A Plus One?",
-    "boady": "Companions are only allowed per invite.",
+    "boady": "Only guest that are on the invitations",
     "isPanelExpanded": false
   },
   {
     "header": "Are Kids Invited?",
-    "boady": "Kids are welcome!",
+    "boady": "Unfortunelty no other children invited other than the flower girls and family members",
     "isPanelExpanded": false
   },
   {
     "header": "Will There Be A Bar?",
-    "boady": "While we won't have a designated bar, we're excited to offer a selection of Wine, Gin, and Brandy for your enjoyment. Additionally, feel free to bring along your preferred beverages.",
+    "boady": "The venue allows for own drinks. Please bring your own drinks and mixes in a neatly compacted cooler bag etc. Ice and glasses will be provided, designated area will be available to store your cooler bag. We request that no large cooler bags/boxes be brought, and please label your cooler bags or bottles. Champagne will be available on the tables for toasting.",
     "isPanelExpanded": false
   },
   {
     "header": "Should I bring a gift?",
-    "boady": "No, there's no need to bring gifts. We understand that traveling can be costly, and your presence is truly appreciated.",
+    "boady": "Your presence at our wedding is the greatest gift of all. If you wish to honor us with a gift, we kindly invite you to contribute to our honeymoon fund, which will help us create unforgettable memories. Wedding post box will be available at the wedding guest table.",
     "isPanelExpanded": false
   },
   {
     "header": "Will accommodation be provided?",
-    "boady": "Accommodation can be arranged for Friday and Saturday night. Kindly specify your accommodation needs in the RSVP tab.",
+    "boady": "Unfortunelty no accomodation available at the venue, those traveling from far, please arrange prior to wedding.",
     "isPanelExpanded": false
   },
   {
     "header": "When Should I RSVP?",
-    "boady": "Please RSVP before 30 April 2024",
+    "boady": "Rsvp before 31 Dec 2025",
     "isPanelExpanded": false
   }
 ] 

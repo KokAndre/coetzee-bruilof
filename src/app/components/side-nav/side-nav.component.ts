@@ -12,7 +12,9 @@ enum availableScreensEnum {
   FAQ = "FAQ's",
   RSVP = 'RSVP',
   RSVPStatus = 'RSVP status',
-  ErrorScreen = 'Error screen'
+  ErrorScreen = 'Error screen',
+  BridalParty = 'Bridal party',
+  Gifts = 'Gifts'
 }
 
 @Component({
